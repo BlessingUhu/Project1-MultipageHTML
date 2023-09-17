@@ -1,1 +1,69 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body li {
+  list-style-type: none;
+}
+
+.nav {
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  z-index: -999;
+}
+.nav .web-logo span {
+  color: #0079ff;
+}
+.nav .web-nav-links {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .web-nav-links li {
+  border-bottom: solid 2px;
+  padding: 5px;
+}
+.nav .web-nav-links li:hover {
+  background-color: rgba(185, 185, 185, 0.365);
+  transition: 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+main {
+  margin-top: 50px;
+}
+main .hero-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+main .hero-container .hero-paragraph {
+  padding: 20px;
+  background-color: #0079ff;
+  border-radius: 20px;
+}
+main .all-links {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .all-links .main-page-paragraph {
+  width: 20%;
+  font-size: 17px;
+  background-color: rgba(185, 185, 185, 0.365);
+  padding: 20px;
+  border-radius: 20px;
+}
+main .all-links .main-page-paragraph a {
+  font-weight: bolder;
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

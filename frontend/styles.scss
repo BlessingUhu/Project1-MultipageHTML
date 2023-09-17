@@ -1,8 +1,9 @@
 $primary-color: #0079ff;
 $secondary-color: rgba(185, 185, 185, 0.365);
-$other:  rgb(110, 110, 110);
+$other: rgb(110, 110, 110);
 
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   a {
     text-decoration: none;
@@ -14,6 +15,7 @@ body {
 }
 
 .nav {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-size: 20px;
   align-items: center;
   display: flex;
@@ -45,34 +47,40 @@ main {
   margin-top: 50px;
   .hero-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 20px;
     .hero-paragraph {
+      width: 40%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       padding: 20px;
       background-color: $primary-color;
       border-radius: 20px;
     }
   }
-  .all-links{
+  .all-links {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 70vh;
 
-    .main-page-paragraph{
-        width: 20%;
-        font-size: 17px;
-        background-color: $secondary-color;
-        padding: 20px;
-        border-radius: 20px;
-        a{
-            font-weight: bolder;
-            text-decoration: underline;
-
-        }
+    .main-page-paragraph {
+      width: 50%;
+      font-size: 17px;
+      background-color: $secondary-color;
+      padding: 20px;
+      border-radius: 20px;
+      a {
+        font-weight: bolder;
+        text-decoration: underline;
+      }
+    }
+    .main-page-paragraph:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transition: all 0.5s;
     }
   }
 }
-
